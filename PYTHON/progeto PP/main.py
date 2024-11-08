@@ -1,27 +1,47 @@
 '''
+Este programa implementa um questionário interativo com interface gráfica customizada, utilizando Customtkinter. 
+Ele oferece seleção aleatória de questões e alunos, temporizador por questão, 
+configurações flexíveis e feedback imediato, ideal para uso educacional ou em apresentações.
 
-Este programa implementa um questionário interativo usando Customkinter uma bibioteca(lib) feita com base no tkinter
-site da lib: https://customtkinter.tomschimansky.com/
-github: https://github.com/TomSchimansky/CustomTkinter
-DOC do tkinter: https://docs.python.org/3/library/tk.html
+Site para baixar python: https://www.python.org/downloads/
+GitHub do Custom Tkinter: https://github.com/TomSchimansky/CustomTkinter
 
-Antes de começa digite esse comando no terminal para vai baixar os requisitos necessário: 
-     pip install -r requisitos.txt  
+Documentação do Custom Tkinter: https://customtkinter.tomschimansky.com/
+Documentação do tkinter: https://docs.python.org/3/library/tk.html
 
 
-#__Estrutura do algoritimo__#
+IMPORTANTE!
+!!!Antes de começar, digite este comando no terminal para instalar os requisitos necessários!!!:
+    pip install -r requisitos.txt
+
+    
+#__Estrutura do algoritmo__#
 - MenuPrincipal
-A classe onde vai ficar o loop principal, onde todas as outras paginas levam para essa
+A classe que contém o loop principal, para onde todas as outras páginas redirecionam.
 
-- Configuração 
-A classe Onde eu configuro a quantidade e tempo das questões 
+- Configuracao 
+A classe onde são configuradas a quantidade de questões e o tempo por questão.
 
 - Questionario
-A classe onde a parte principal do programa fica, onde serão mostradas o questionario
+A classe principal do programa, onde o questionário é exibido e respondido.
 
 - PaginaResposta
-A classe onde no final do questionario vai mostrar o resultado de quantas questões foram respondidas e quantas foram acertadas
+A classe que, ao final do questionário, mostra o resultado de quantas questões foram respondidas e quantas foram acertadas.
 
+#__Características principais__#
+- Interface gráfica personalizada com Customtkinter
+- Seleção aleatória de questões de um arquivo JSON
+- Temporizador para cada questão com barra de progresso
+- Configuração flexível do número de questões e tempo por questão
+- Seleção aleatória de alunos para participação
+
+#__Arquivos de dados__#
+- pergunta.json: Contém as questões, alternativas e respostas corretas
+- alunos.json: Lista de alunos para seleção aleatória
+
+#__Variáveis globais importantes__#
+- NUM_QUESTOES: Número de questões no questionário (padrão: 5)
+- TEMPO_QUESTAO: Tempo em segundos para responder cada questão (padrão: 10)
 '''
 
 import customtkinter as ctk
