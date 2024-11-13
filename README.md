@@ -1,21 +1,73 @@
 # PROGRAMAÇÃO ORIENTADA A EVENTOS COM PYTHON
 
-Este projeto explora o conceito de programação orientada a eventos (POE) em Python, uma abordagem usada para desenvolver sistemas reativos e interativos, como jogos, interfaces gráficas (GUIs) e sistemas de automação. Na POE, o fluxo do programa é ditado por eventos, como cliques de botão, movimentação do mouse, entradas do teclado, entre outros.
+## Sobre Python
+Python é uma linguagem de programação poderosa, versátil e fácil de aprender. Criada por Guido Van Rossum, um programador holandês, em 1991 (com desenvolvimento iniciado em 1989), a linguagem recebeu este nome inspirado no programa de TV da BBC "Monty Python's Flying Circus".
 
-## O que você vai aprender:
-* Definição de eventos: Como eventos são capturados e processados em um loop principal.
-* Uso de bibliotecas populares: pygame para o desenvolvimento de jogos.
+Características principais do Python:
+* Linguagem multiparadigma (suporta programação orientada a objetos, imperativa, orientada a eventos)
+* Sintaxe elegante e tipagem dinâmica
+* Natureza interpretativa
+* Ideal para desenvolvimento rápido em diversas áreas e plataformas
+
+Principais aplicações:
+* Desenvolvimento web server-side
+* Automação com scripts
+* Ciência de dados e Machine Learning
+* Desenvolvimento de software
+* Automação de testes de software
+
+## Sobre Programação Orientada a Eventos (POE)
+A Programação Orientada a Eventos é um paradigma poderoso que permite o desenvolvimento de sistemas reativos e interativos. Nesta abordagem, o fluxo do programa é determinado por eventos como cliques de botão, movimentação do mouse, entradas do teclado e outros tipos de interação.
+
+Características principais:
+* Desenvolvimento de programas modulares e flexíveis
+* Ideal para sistemas reativos e aplicações interativas
+* Foco na experiência do usuário
+* Amplamente utilizada em interfaces gráficas e jogos
 
 ## Estrutura do Projeto:
-* Exemplos básicos: Introdução a eventos com front-end interativo
 
-* Jogo interativo: Exemplo de jogo simples implementado com eventos, onde o jogador interage com o ambiente em tempo real utilizando pygame.
+### 1. Software de Processamento de Imagens
+Localizado em `PYTHON/ImageSoftware/`
+* Interface gráfica para manipulação de imagens
+* Funcionalidades:
+  - Conversão para escala de cinza
+  - Exportação para Excel
+  - Manipulação de canais CMYK
+  - Ajuste de contraste
+  - Aplicação de filtros
+  - Remoção de canais de cor
+
+### 2. Sistema de Questionário Interativo
+Localizado em `PYTHON/progeto PP/`
+* Interface gráfica customizada para questionários
+* Características:
+  - Seleção aleatória de questões
+  - Temporizador por questão
+  - Configurações flexíveis
+  - Seleção aleatória de alunos
+  - Sistema de pontuação e feedback
+
+### 3. Cat Game
+Localizado em `PYTHON/Cat Game/`
+* Jogo interativo desenvolvido com Pygame
+* Características:
+  - Controle de personagem com teclado
+  - Sistema de pontuação
+  - Coleta de itens (peixes)
+  - Obstáculos dinâmicos
+  - Efeitos sonoros e música
+  - Menu principal animado
+  - Sistema de game over
 
 ## Requisitos:
 * Python 3.x
-* Bibliotecas: pygame (instaladas por padrão no Python).
+* Bibliotecas: 
+  - pygame
+  - customtkinter
+  - pandas
 
-## referencias:
+## Referências:
 * <a href="https://docs.python.org/pt-br/3/tutorial/" class="linkFooter">Python - docs.python</a>
 * <a href="https://www.linkedin.com/in/guido-van-rossum-4a0756/" class="linkFooter">Guido Van Rossum - linkedin</a>
 * <a href="https://techcrunch.com/2012/12/07/dropbox-guido-van-rossum-python/" class="linkFooter">Guido Van Rossum - techcrunch</a>

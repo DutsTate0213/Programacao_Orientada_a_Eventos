@@ -1,23 +1,62 @@
-"""
-Este programa faz traz uma forma simples de usar imagens com o python usando a 
-biblioteta(lib) PILLOW(PIL) para as as modificações na imagem selecionada e usa
-customtkinter e tkinter para interface
+'''
+Este programa traz uma forma simples de usar imagens com o python usando a 
+biblioteca (lib) PILLOW(PIL) para as modificações na imagem selecionada e usa
+customtkinter e tkinter para interface.
 
-# Sites das libs usadas
-site do custom tkinter: https://customtkinter.tomschimansky.com/
-site do Pillow: https://pillow.readthedocs.io/en/stable/index.html
-site do openpyxl: https://openpyxl.readthedocs.io/en/stable/
-
+Site do custom tkinter: https://customtkinter.tomschimansky.com/
+Site do Pillow: https://pillow.readthedocs.io/en/stable/index.html
+Site do openpyxl: https://openpyxl.readthedocs.io/en/stable/
 DOC do tkinter: https://docs.python.org/3/library/tk.html
 
-Antes de rodar o codigo digite o seguinte comando no terminal para baixar aslibs necessarias: 
-        pip install -r requisitos.txt
+IMPORTANTE!
+!!!Antes de rodar o código digite o seguinte comando no terminal para baixar as libs necessárias!!!:
+    pip install -r requisitos.txt
 
-O programa é dividido em 3 classes uma é onde fica as funções a serem usadas
-a outra é a estrutura da pagina onde serão criados os botões e a ultima 
-é onde fica a pagina principal onde todos oscomponentes pricipais estão ligado a ela
 
-"""
+#__Estrutura do algoritmo__#
+- Functions
+A classe que contém todas as funções de manipulação de imagem:
+    - Funções de manipulação básica (abrir, mostrar, salvar)
+    - Funções de conversão de cores (RGB, CMYK, escala de cinza)
+    - Funções de busca e manipulação de cores
+    - Funções de filtros e efeitos
+    - Funções de exportação (Excel)
+
+- Struct
+A classe responsável pela:
+    - Criação e organização dos botões da interface
+    - Estruturação das páginas principais
+    - Gerenciamento das sub-páginas
+    - Configuração dos elementos visuais
+
+- Main
+A classe principal que:
+    - Herda de Functions e Struct
+    - Gerencia a janela principal
+    - Controla o fluxo do programa
+    - Inicializa a interface gráfica
+    - Gerencia eventos e interações do usuário
+
+#__Fluxo de execução__#
+1. Inicialização da janela principal
+2. Carregamento da imagem pelo usuário
+3. Manipulação da imagem através das funções disponíveis
+4. Visualização em tempo real das alterações
+5. Possibilidade de salvar ou exportar o resultado
+
+#__Características principais__#
+- Interface gráfica personalizada com Customtkinter
+- Múltiplas funções de processamento de imagem
+- Conversão entre diferentes espaços de cor (RGB, CMYK, escala de cinza)
+- Aplicação de filtros e ajustes de contraste
+- Exportação para Excel
+- Busca e manipulação de cores específicas
+
+#__Variáveis globais importantes__#
+- largura_tela: Largura da janela principal
+- altura_tela: Altura da janela principal
+- Paleta de cores: cor_1, cor_2, cor_entry, cor_texto, cor_frame, cor_fundo
+'''
 
 
 import customtkinter as ctk
